@@ -1,0 +1,7 @@
+Console.WriteLine("Ingresa tu nombre");
+string name = Console.ReadLine();
+Console.WriteLine("este es tu nombre, " + name);
+
+Console.WriteLine("La hora es:");
+string time = DateTime.Now.ToString("t");
+    Console.WriteLine(time);
