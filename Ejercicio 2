@@ -52,7 +52,7 @@ largo = Convert.ToSingle(Console.ReadLine());
 
 
 
-
+//Condicones
 
 int i = 15;
 char a = 'a';
