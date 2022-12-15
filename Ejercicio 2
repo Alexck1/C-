@@ -1,0 +1,61 @@
+string nombre,apellido,ciudad,pr;
+int edad;
+
+Console.WriteLine("Ingresa tu nombre ");
+nombre = Console.ReadLine();
+
+Console.WriteLine("Ingresa tu Apellido ");
+apellido = Console.ReadLine();
+
+Console.WriteLine("Ingresa tu Edad");
+edad = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Ingresa tu Ciudad");
+ciudad = Console.ReadLine();
+
+Console.WriteLine("Sabes programar?");
+pr = Console.ReadLine();
+
+
+//coche
+string puertas,ruedas,marca,itv; // no se a que se refiere
+
+Console.WriteLine("marca de la puerta");
+puertas = Console.ReadLine();
+
+Console.WriteLine("marca de la ruedas");
+ruedas = Console.ReadLine();
+
+Console.WriteLine("marca de coche");
+marca = Console.ReadLine();
+
+Console.WriteLine("Itv vigiten?");
+itv = Console.ReadLine();
+
+
+//mesa 
+string material,color;
+int peso;
+float largo;
+
+Console.WriteLine("Materia de la mesa");
+material = Console.ReadLine();
+
+Console.WriteLine("Color de la mesa");
+color = (Console.ReadLine());
+
+Console.WriteLine("Peso de la mesa en kilos");
+peso = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Largo de la mesa en Cm añadir el numero con una coma");
+largo = Convert.ToSingle(Console.ReadLine());
+
+
+
+
+
+int i = 15;
+char a = 'a';
+
+Console.WriteLine((i < 18 && 18 > i ));
+Console.Write((a =='a' && a !='a'));
