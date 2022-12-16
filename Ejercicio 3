@@ -1,0 +1,35 @@
+
+Datos cliente = new Datos("lex",1222333444,"Crots",123,8,"fff@gmail.com","Nuevo");                     
+Console.WriteLine("Nombre: "+cliente.Nombre);
+Console.WriteLine("Telefono: "+cliente.Telefono);
+Console.WriteLine("Calle: "+cliente.Calle);
+Console.WriteLine("Numero: "+cliente.Numero);
+Console.WriteLine("Apartamento: "+cliente.Apartamento);
+Console.WriteLine("Email: "+cliente.Email);
+Console.WriteLine("Tipo De Cliente: "+cliente.Tcliente);
+
+public struct Datos                                    //struc datos         
+{
+    public   Datos(string nombre,int telefono,string calle,int numero, int apartamento,string email,string tcliente)
+     
+    {
+        Nombre = nombre;
+        Telefono = telefono;
+        Calle = calle;
+        Numero = numero;
+        Apartamento = apartamento;
+        Email = email;
+        Tcliente = tcliente;
+    }
+
+    public string Nombre{get;}
+    public int Telefono{get;}
+    public string Calle{get;}
+    public int Numero{get;}
+    public int Apartamento{get;}
+    public string Email{get;}
+    public string Tcliente{get;}
+    
+    
+    public override string ToString() => $"({Nombre},{Telefono},{Calle},{Numero},{Apartamento},{Email},{Tcliente})";     
+}
