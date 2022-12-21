@@ -1,0 +1,87 @@
+//While
+
+Console.WriteLine("ingresa el numero entero para ver su tabla de multiplicar");
+int numero = int.Parse(Console.ReadLine());
+int counter = 1;
+
+Console.WriteLine($"tabla de multiplicar del {numero}:");
+
+while (counter <= 10)
+{
+    Console.WriteLine($"numero {numero} x {counter} = {numero * counter}");
+    counter++;
+}
+
+
+
+
+
+//Do While
+
+
+int npositivos = 0;
+int nnegativos = 0;
+
+do
+{
+    Console.WriteLine("ingresa un numero");
+    int number = int.Parse(Console.ReadLine());
+    if (number > npositivos)
+    {
+        npositivos++;
+    }
+    else if(number < nnegativos)
+    {
+        nnegativos++;
+    }
+
+    Console.WriteLine("quieres ingresar otro numero(S/N)");
+} while (Console.ReadLine().ToUpper()=="S");
+
+Console.WriteLine("Cantidad de numeros positivos: "+npositivos);
+Console.WriteLine("Cantidad de numeros negativos: "+nnegativos);
+
+
+
+
+
+
+
+
+//For
+
+Console.WriteLine("cuantos rectangulos/cuadrados quieres dibujar");
+int nveces = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("ingresa la altura");
+int altura = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("ingresa la anchura");
+int ancho = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("quieres rellenar el cuadrado (s/n)");
+char fill = char.Parse(Console.ReadLine());
+
+
+for (var x = 0; x < nveces; x++)
+{
+    for (var i = 0; i < altura; i++)
+    {
+        for (var j = 0; j < ancho; j++)
+        {
+            if (fill == 's' || (i==0 || i==altura-1 || j==0 || j== ancho -1))
+            {
+                Console.Write("*");
+            }
+            else
+            {
+                Console.Write(" ");
+            }
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+
+
