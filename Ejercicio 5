@@ -1,0 +1,77 @@
+                                                                //EJERCICO 1 - IF
+
+
+//Datos del Producto
+int precioOriginal=1450;
+Double Descuento=0.2;
+
+//producto
+Console.WriteLine("Iphone 14 \n");
+
+
+//Datos cliente
+Console.WriteLine("instroduce tu nombre");
+string nombre=Console.ReadLine();
+
+Console.WriteLine("introduce tu email");
+string email=Console.ReadLine();
+
+
+
+//Cupon de Descuento
+Console.WriteLine("ingrese su codigo de descuento");
+string cupon = Console.ReadLine();
+bool tienecupon = !string.IsNullOrEmpty(cupon);
+
+
+//secuencia logica con if
+if (cupon == "HK045P434")
+{
+    if (tienecupon)
+    {
+        Double precioConDescuento = precioOriginal - (precioOriginal * Descuento);
+        Console.WriteLine($"El precio Origianl es de {precioOriginal} precion con Descuento aplicado es de {precioConDescuento}");
+    }    
+}
+else
+{
+    Console.WriteLine($"No tienes cupon de Descuento\nEl precio seria de {precioOriginal} ");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    //EJERCIO 2 -SWITCH
+
+
+Console.WriteLine("seleciona un leguaje de programicion");
+Console.WriteLine("(1)C#\n(2)Java\n(3)C++\n(4)Phyton");
+Console.WriteLine();
+int num = int.Parse(Console.ReadLine());
+Console.WriteLine();
+switch (num)
+{
+    case 1:Console.WriteLine("C#");
+    break;
+    case 2:Console.WriteLine("Java");
+    break;
+    case 3:Console.WriteLine("C++");
+    break;
+    case 4:Console.WriteLine("Phyton");
+    break;
+    default:Console.WriteLine("El numero introducido no es compatible con la selecion");
+    break;
+}
